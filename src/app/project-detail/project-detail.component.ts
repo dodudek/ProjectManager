@@ -11,6 +11,8 @@ import {ProjectService} from "../project.service";
 })
 export class ProjectDetailComponent implements OnInit {
 
+
+
   @Input()project:Project;
 
   constructor(private route: ActivatedRoute,

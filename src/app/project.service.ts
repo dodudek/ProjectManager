@@ -14,10 +14,11 @@ const httpOptions = {
 })
 export class ProjectService {
 
-  private projectsUrl = 'api/projects';
+  private projectsUrl = '//localhost:9999/projects';
 
   constructor(private http:HttpClient,
-              private messageService: MessageService) { }
+              private messageService: MessageService) {
+  }
 
   getProjects(): Observable<Project[]>
   { return this.http.get<Project[]>(this.projectsUrl).pipe(
